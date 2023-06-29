@@ -1,0 +1,45 @@
+{
+  "name": "@hypernym/eslint-config",
+  "version": "1.0.0",
+  "author": "Hypernym Studio",
+  "description": "Hypernym ESLint config.",
+  "license": "MIT",
+  "repository": "hypernym-studio/eslint-config",
+  "homepage": "https://github.com/hypernym-studio/eslint-config",
+  "main": "./src/index.js",
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "config"
+  ],
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "fix": "eslint --fix ."
+  },
+  "peerDependencies": {
+    "eslint": ">=8.33.0",
+    "prettier": ">=2.8.3",
+    "typescript": ">=4.9.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint-config-prettier": "^8.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "eslintConfig": {
+    "extends": "./src/index.js"
+  },
+  "prettier": "./.config/prettier.config.cjs"
+}
