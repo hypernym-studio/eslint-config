@@ -17,11 +17,40 @@ npm i -D @hypernym/eslint-config
 
 ## Usage
 
+### Simple
+
+```js
+// package.json
+
+{
+  "eslintConfig": {
+    "extends": "@hypernym/eslint-config"
+  }
+}
+```
+
+### Custom
+
 ```js
 // eslint.config.cjs
 
-{
+module.exports = {
   extends: ['@hypernym/eslint-config']
+
+  // custom options...
+}
+```
+
+### Types
+
+```js
+// eslint.config.cjs
+
+/** @type {import('@hypernym/eslint-config').Config} */
+module.exports = {
+  extends: ['@hypernym/eslint-config']
+
+  // custom options...
 }
 ```
 
