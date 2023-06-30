@@ -1,3 +1,4 @@
+/** @type {import('./index').Config} */
 module.exports = {
   root: true,
 
@@ -7,13 +8,13 @@ module.exports = {
     es2022: true
   },
 
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 2022
   },
 
   extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
-  parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
 
   ignorePatterns: [
