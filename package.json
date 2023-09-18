@@ -2,43 +2,63 @@
   "name": "@hypernym/eslint-config",
   "version": "1.0.1",
   "author": "Hypernym Studio",
-  "description": "Hypernym ESLint config.",
+  "description": "Hypernym's internal config for ESLint.",
   "license": "MIT",
   "repository": "hypernym-studio/eslint-config",
   "homepage": "https://github.com/hypernym-studio/eslint-config",
-  "main": "./src/index.js",
-  "types": "./src/index.d.ts",
+  "funding": "https://github.com/sponsors/ivodolenc",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.mjs"
+    }
+  },
   "files": [
-    "src"
+    "dist"
   ],
   "keywords": [
     "eslint",
     "eslint-config",
-    "config"
+    "presets",
+    "config",
+    "esm"
   ],
   "scripts": {
-    "format": "prettier --write .",
-    "lint": "eslint -c ./src/index.js .",
-    "fix": "eslint -c ./src/index.js --fix ."
+    "build": "rolli",
+    "bump": "bummp",
+    "lint": "ESLINT_USE_FLAT_CONFIG=true eslint -c .config/eslint.config.js .",
+    "lint:fix": "ESLINT_USE_FLAT_CONFIG=true eslint -c .config/eslint.config.js --fix .",
+    "format": "prettier --config .config/prettier.config.js --write .",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "eslint": ">=8.33.0",
-    "prettier": ">=2.8.3",
-    "typescript": ">=4.9.0"
+    "eslint": ">=8.44.0",
+    "typescript": ">=5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.60.0",
-    "@typescript-eslint/parser": "^5.60.0",
-    "eslint-config-prettier": "^8.8.0"
+    "@babel/eslint-parser": "^7.22.15",
+    "@babel/plugin-syntax-import-assertions": "^7.22.5",
+    "@eslint/js": "^8.49.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "globals": "^13.21.0"
   },
   "devDependencies": {
-    "@hypernym/prettier-config": "^1.0.1",
-    "eslint": "^8.43.0",
-    "prettier": "^2.8.8",
-    "typescript": "^5.0.4"
+    "@hypernym/prettier-config": "^2.0.0",
+    "@hypernym/tsconfig": "^1.0.1",
+    "bummp": "^0.2.0",
+    "eslint": "^8.49.0",
+    "prettier": "^3.0.3",
+    "rolli": "^0.6.1",
+    "typescript": "^5.1.6"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "prettier": "@hypernym/prettier-config"
+  "engines": {
+    "node": ">=v18.0.0"
+  }
 }
