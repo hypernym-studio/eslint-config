@@ -1,6 +1,6 @@
 {
   "name": "@hypernym/eslint-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Hypernym Studio",
   "description": "Hypernym's internal config for ESLint.",
   "license": "MIT",
@@ -26,7 +26,6 @@
   ],
   "scripts": {
     "build": "rolli",
-    "bump": "bummp",
     "lint": "ESLINT_USE_FLAT_CONFIG=true eslint -c .config/eslint.config.js .",
     "lint:fix": "ESLINT_USE_FLAT_CONFIG=true eslint -c .config/eslint.config.js --fix .",
     "format": "prettier --config .config/prettier.config.js --write .",
