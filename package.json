@@ -44,18 +44,17 @@
   "dependencies": {
     "@babel/eslint-parser": "^7.22.15",
     "@babel/plugin-syntax-import-assertions": "^7.22.5",
-    "@eslint/js": "^8.49.0",
-    "@typescript-eslint/eslint-plugin": "^6.7.0",
-    "@typescript-eslint/parser": "^6.7.0",
-    "globals": "^13.21.0"
+    "@eslint/js": "^8.50.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "globals": "^13.22.0"
   },
   "devDependencies": {
     "@hypernym/prettier-config": "^2.0.0",
     "@hypernym/tsconfig": "^1.0.1",
-    "bummp": "^0.2.0",
-    "eslint": "^8.49.0",
+    "eslint": "^8.50.0",
     "prettier": "^3.0.3",
-    "rolli": "^0.6.1",
+    "rolli": "^0.7.0",
     "typescript": "^5.1.6"
   },
   "engines": {
