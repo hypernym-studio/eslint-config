@@ -22,7 +22,7 @@ export const tsConfig = {
   },
   rules: {
     ...jsPlugin.configs['recommended'].rules,
-    ...tsPlugin.configs['eslint-recommended'].rules,
+    ...tsPlugin.configs['eslint-recommended'].overrides[0].rules,
     ...tsPlugin.configs['recommended'].rules,
   },
 }
