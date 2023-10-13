@@ -25,7 +25,7 @@
     "esm"
   ],
   "scripts": {
-    "build": "rolli",
+    "build": "hyperbundler",
     "lint": "ESLINT_USE_FLAT_CONFIG=true eslint -c .config/eslint.config.js .",
     "lint:fix": "ESLINT_USE_FLAT_CONFIG=true eslint -c .config/eslint.config.js --fix .",
     "format": "prettier --config .config/prettier.config.js --write .",
@@ -43,18 +43,18 @@
   "dependencies": {
     "@babel/eslint-parser": "^7.22.15",
     "@babel/plugin-syntax-import-assertions": "^7.22.5",
-    "@eslint/js": "^8.50.0",
-    "@typescript-eslint/eslint-plugin": "^6.7.3",
-    "@typescript-eslint/parser": "^6.7.3",
-    "globals": "^13.22.0"
+    "@eslint/js": "^8.51.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "globals": "^13.23.0"
   },
   "devDependencies": {
-    "@hypernym/prettier-config": "^2.0.0",
-    "@hypernym/tsconfig": "^1.0.1",
-    "eslint": "^8.50.0",
+    "@hypernym/bundler": "^0.1.2",
+    "@hypernym/prettier-config": "^2.0.1",
+    "@hypernym/tsconfig": "^1.1.0",
+    "eslint": "^8.51.0",
     "prettier": "^3.0.3",
-    "rolli": "^0.7.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
   "engines": {
     "node": ">=v18.0.0"
