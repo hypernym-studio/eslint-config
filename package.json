@@ -41,20 +41,20 @@
     }
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.22.15",
-    "@babel/plugin-syntax-import-assertions": "^7.22.5",
-    "@eslint/js": "^8.51.0",
-    "@typescript-eslint/eslint-plugin": "^6.7.5",
-    "@typescript-eslint/parser": "^6.7.5",
+    "@babel/eslint-parser": "^7.23.3",
+    "@babel/plugin-syntax-import-assertions": "^7.23.3",
+    "@eslint/js": "^8.54.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
     "globals": "^13.23.0"
   },
   "devDependencies": {
-    "@hypernym/bundler": "^0.1.2",
-    "@hypernym/prettier-config": "^2.0.1",
+    "@hypernym/bundler": "^0.6.1",
+    "@hypernym/prettier-config": "^2.0.2",
     "@hypernym/tsconfig": "^1.1.0",
-    "eslint": "^8.51.0",
-    "prettier": "^3.0.3",
-    "typescript": "^5.2.2"
+    "eslint": "^8.54.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.2"
   },
   "engines": {
     "node": ">=v18.0.0"
