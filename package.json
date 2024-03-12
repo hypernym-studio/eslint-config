@@ -43,18 +43,18 @@
   "dependencies": {
     "@babel/eslint-parser": "^7.23.10",
     "@babel/plugin-syntax-import-assertions": "^7.23.3",
-    "@eslint/js": "^8.56.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
+    "@eslint/js": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
     "globals": "^14.0.0"
   },
   "devDependencies": {
     "@hypernym/bundler": "^0.8.0",
-    "@hypernym/prettier-config": "^2.0.3",
+    "@hypernym/prettier-config": "^2.0.4",
     "@hypernym/tsconfig": "^1.2.0",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "prettier": "^3.2.5",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.2"
   },
   "engines": {
     "node": ">=v18.0.0"
