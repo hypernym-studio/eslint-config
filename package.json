@@ -1,6 +1,6 @@
 {
   "name": "@hypernym/eslint-config",
-  "version": "2.0.5",
+  "version": "3.0.0",
   "author": "Hypernym Studio",
   "description": "Hypernym's internal config for ESLint.",
   "license": "MIT",
@@ -26,13 +26,17 @@
   ],
   "scripts": {
     "build": "hyperbundler",
-    "lint": "ESLINT_USE_FLAT_CONFIG=true eslint -c .config/eslint.config.js .",
-    "lint:fix": "ESLINT_USE_FLAT_CONFIG=true eslint -c .config/eslint.config.js --fix .",
+    "lint": "eslint -c .config/eslint.config.js .",
+    "lint:fix": "eslint -c .config/eslint.config.js --fix .",
     "format": "prettier --config .config/prettier.config.js --write .",
     "prepublishOnly": "npm run build"
   },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "peerDependencies": {
-    "eslint": ">=8.44.0",
+    "eslint": ">=9.0.0",
     "typescript": ">=5.0.0"
   },
   "peerDependenciesMeta": {
@@ -41,22 +45,17 @@
     }
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.23.10",
-    "@babel/plugin-syntax-import-assertions": "^7.23.3",
-    "@eslint/js": "^8.57.0",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.2.0",
-    "globals": "^14.0.0"
+    "@eslint/js": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
+    "globals": "^15.0.0"
   },
   "devDependencies": {
-    "@hypernym/bundler": "^0.8.0",
+    "@hypernym/bundler": "^0.8.1",
     "@hypernym/prettier-config": "^2.0.4",
     "@hypernym/tsconfig": "^1.2.0",
-    "eslint": "^8.57.0",
+    "eslint": "^9.0.0",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.2"
-  },
-  "engines": {
-    "node": ">=v18.0.0"
+    "typescript": "^5.4.4"
   }
 }
