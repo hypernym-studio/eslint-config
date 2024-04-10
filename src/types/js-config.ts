@@ -1,17 +1,8 @@
 export interface JsConfig {
   files: string[]
   languageOptions: {
-    parser: any
-    parserOptions: {
-      sourceType: string
-      ecmaVersion: string
-      requireConfigFile: boolean
-      babelOptions: {
-        babelrc: boolean
-        configFile: boolean
-        plugins: string[]
-      }
-    }
+    sourceType: string
+    ecmaVersion: string
     globals: {
       [globalName: string]: boolean
     }
