@@ -10,26 +10,15 @@ npm i -D @hypernym/eslint-config
 
 ## Setup
 
-1. Enable `useFlatConfig` option in `vscode` settings:
-
-> [!NOTE]\
-> This step won't be necessary in the future releases.
-
-```js
-// .vscode/settings.json
-{
-  "eslint.experimental.useFlatConfig": true
-}
-```
-
-2. Optionally, add `lint` commands for manual linting:
+Add `lint` commands for manual linting (optionally):
 
 ```js
 // package.json
+
 {
   "scripts": {
-    "lint": "ESLINT_USE_FLAT_CONFIG=true eslint .",
-    "lint:fix": "ESLINT_USE_FLAT_CONFIG=true eslint --fix ."
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   }
 }
 ```
