@@ -3,14 +3,13 @@ import jsPlugin from '@eslint/js'
 import tsParser from '@typescript-eslint/parser'
 import tsPlugin from '@typescript-eslint/eslint-plugin'
 
+/** @type {import("eslint").Linter.Config} */
 export const tsConfig = {
   files: ['**/*.{ts,mts,cts}'],
   languageOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
     parser: tsParser,
-    parserOptions: {
-      sourceType: 'module',
-      ecmaVersion: 'latest',
-    },
     globals: {
       ...globals.es2021,
       ...globals.browser,
@@ -21,8 +20,7 @@ export const tsConfig = {
     '@typescript-eslint': tsPlugin,
   },
   rules: {
-    ...jsPlugin.configs['recommended'].rules,
-    ...tsPlugin.configs['eslint-recommended'].overrides[0].rules,
-    ...tsPlugin.configs['recommended'].rules,
+    ...jsPlugin.configs.recommended.rules,
+    ...tsPlugin.configs.recommended.rules,
   },
 }

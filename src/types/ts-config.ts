@@ -1,21 +1,3 @@
-export interface TsConfig {
-  files: string[]
-  languageOptions: {
-    parser: any
-    parserOptions: {
-      sourceType: string
-      ecmaVersion: string
-    }
-    globals: {
-      [globalName: string]: boolean
-    }
-  }
-  plugins: {
-    [pluginName: string]: any
-  }
-  rules: {
-    [ruleName: string]: string
-  }
-}
+import type { Linter } from 'eslint'
 
-export declare const tsConfig: TsConfig
+export declare const tsConfig: Linter.Config

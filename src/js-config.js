@@ -1,11 +1,12 @@
 import globals from 'globals'
 import jsPlugin from '@eslint/js'
 
+/** @type {import("eslint").Linter.Config} */
 export const jsConfig = {
   files: ['**/*.{js,mjs,cjs}'],
   languageOptions: {
-    sourceType: 'module',
     ecmaVersion: 'latest',
+    sourceType: 'module',
     globals: {
       ...globals.es2021,
       ...globals.browser,
@@ -13,6 +14,6 @@ export const jsConfig = {
     },
   },
   rules: {
-    ...jsPlugin.configs['recommended'].rules,
+    ...jsPlugin.configs.recommended.rules,
   },
 }

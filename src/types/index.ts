@@ -1,3 +1,3 @@
-export * from './js-config.js'
-export * from './ts-config.js'
-export * from './ignores.js'
+export * from './js-config'
+export * from './ts-config'
+export * from './ignores'
