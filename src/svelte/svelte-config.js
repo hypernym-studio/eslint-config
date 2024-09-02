@@ -25,7 +25,12 @@ export const svelteConfig = {
     ...jsPlugin.configs.recommended.rules,
     ...tsPlugin.configs.recommended.rules,
     ...sveltePlugin.configs.recommended.rules,
-    'svelte/valid-compile': 'off',
+    'no-undef': 'off',
+    'no-unused-vars': ['error', { ignoreRestSiblings: true }],
     '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      { ignoreRestSiblings: true },
+    ],
   },
 }
