@@ -5,7 +5,7 @@ Hypernym's internal config for ESLint.
 <sub><a href="https://github.com/hypernym-studio/eslint-config">Repository</a> | <a href="https://www.npmjs.com/package/@hypernym/eslint-config">Package</a> | <a href="https://github.com/hypernym-studio/eslint-config/releases">Releases</a> | <a href="https://github.com/hypernym-studio/eslint-config/discussions">Discussions</a></sub>
 
 ```sh
-npm i -D @hypernym/eslint-config
+pnpm add -D @hypernym/eslint-config
 ```
 
 ## Setup
@@ -45,6 +45,25 @@ import { jsConfig, tsConfig, ignoresConfig } from '@hypernym/eslint-config'
 export default [jsConfig, tsConfig, ignoresConfig]
 ```
 
+### Svelte/SvelteKit
+
+> [!NOTE]
+>
+> Install the required `Svelte` dev dependencies before using:
+>
+> ```sh
+> pnpm add -D eslint-plugin-svelte svelte-eslint-parser
+> ```
+
+```js
+// eslint.config.js
+
+import { jsConfig, tsConfig, ignoresConfig } from '@hypernym/eslint-config'
+import { svelteConfig } from '@hypernym/eslint-config/svelte'
+
+export default [jsConfig, tsConfig, svelteConfig, ignoresConfig]
+```
+
 ### Custom
 
 ```js
@@ -79,8 +98,6 @@ Use the official [discussions](https://github.com/hypernym-studio/eslint-config/
 
 ## License
 
-Developed in 🇭🇷 Croatia.
+Developed in 🇭🇷 Croatia, © Hypernym Studio.
 
 Released under the [MIT](LICENSE.txt) license.
-
-© Hypernym Studio
