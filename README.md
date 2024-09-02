@@ -54,6 +54,16 @@ export default [jsConfig, tsConfig, ignoresConfig]
 > ```sh
 > pnpm add -D eslint-plugin-svelte svelte-eslint-parser
 > ```
+>
+> Also, don't forget to add the `svelte` lang key to the `eslint.validate` vscode setting:
+>
+> ```js
+> // .vscode/settings.json
+>
+> {
+>   "eslint.validate": ["javascript", "typescript", "svelte"]
+> }
+> ```
 
 ```js
 // eslint.config.js
