@@ -5,6 +5,8 @@ export const ignores = [
   '**/.private/**/*',
   '**/.build/**/*',
   '**/.coverage/**/*',
+  '**/.svelte-kit/**/*',
+  '**/.vercel/**/*',
   '**/.history/**/*',
   '**/.output/**/*',
   '**/.cache/**/*',

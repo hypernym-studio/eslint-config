@@ -12,6 +12,10 @@
     ".": {
       "types": "./dist/types/index.d.ts",
       "import": "./dist/index.mjs"
+    },
+    "./svelte": {
+      "types": "./dist/types/svelte/index.d.ts",
+      "import": "./dist/svelte/index.mjs"
     }
   },
   "files": [
@@ -29,18 +33,28 @@
     "lint": "eslint -c .config/eslint.config.js .",
     "lint:fix": "eslint -c .config/eslint.config.js --fix .",
     "format": "prettier --config .config/prettier.config.js --write .",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm build"
   },
   "sideEffects": false,
+  "packageManager": "pnpm@9.9.0",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
   },
   "peerDependencies": {
     "eslint": ">=9.0.0",
-    "typescript": ">=5.0.0"
+    "typescript": ">=5.0.0",
+    "eslint-plugin-svelte": ">=2.39.0",
+    "svelte-eslint-parser": ">=0.39.0"
   },
   "peerDependenciesMeta": {
     "typescript": {
+      "optional": true
+    },
+    "eslint-plugin-svelte": {
+      "optional": true
+    },
+    "svelte-eslint-parser": {
       "optional": true
     }
   },
@@ -57,7 +71,9 @@
     "@hypernym/prettier-config": "^3.1.0",
     "@hypernym/tsconfig": "^2.1.0",
     "eslint": "^9.9.1",
+    "eslint-plugin-svelte": "^2.43.0",
     "prettier": "^3.3.3",
+    "svelte-eslint-parser": "^0.41.0",
     "typescript": "^5.5.4"
   }
 }
