@@ -23,7 +23,6 @@ export const tsConfig = {
     ...jsPlugin.configs.recommended.rules,
     ...tsPlugin.configs.recommended.rules,
     'no-undef': 'off',
-    'no-unused-vars': ['error', { ignoreRestSiblings: true }],
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-unused-vars': [
       'error',
