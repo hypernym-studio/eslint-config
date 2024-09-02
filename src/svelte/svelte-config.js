@@ -1,6 +1,7 @@
 import globals from 'globals'
 import jsPlugin from '@eslint/js'
 import tsPlugin from '@typescript-eslint/eslint-plugin'
+import tsParser from '@typescript-eslint/parser'
 import sveltePlugin from 'eslint-plugin-svelte'
 import svelteParser from 'svelte-eslint-parser'
 
@@ -11,6 +12,9 @@ export const svelteConfig = {
     sourceType: 'module',
     ecmaVersion: 'latest',
     parser: svelteParser,
+    parserOptions: {
+      parser: tsParser,
+    },
     globals: {
       ...globals.es2021,
       ...globals.browser,
