@@ -14,5 +14,15 @@ export default defineConfig({
       ],
     },
     { types: './src/types/svelte/index.ts' },
+    {
+      input: './src/vue/index.js',
+      output: './dist/vue/index.mjs',
+      externals: [
+        ...Object.keys(dependencies),
+        ...Object.keys(devDependencies),
+        'vue-eslint-parser',
+      ],
+    },
+    { types: './src/types/vue/index.ts' },
   ],
 })

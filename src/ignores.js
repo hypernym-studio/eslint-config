@@ -8,8 +8,10 @@ export const ignores = [
   '**/.svelte-kit/**/*',
   '**/.vercel/**/*',
   '**/.history/**/*',
+  '**/.netlify/**/*',
   '**/.output/**/*',
   '**/.cache/**/*',
+  '**/.nuxt/**/*',
   '**/.temp/**/*',
   '**/.tmp/**/*',
   '**/.out/**/*',
@@ -33,6 +35,7 @@ export const ignores = [
   '**/LICENSE*',
 ]
 
+/** @type {import("eslint").Linter.Config} */
 export const ignoresConfig = {
   ignores,
 }

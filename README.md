@@ -74,6 +74,35 @@ import { svelteConfig } from '@hypernym/eslint-config/svelte'
 export default [jsConfig, tsConfig, svelteConfig, ignoresConfig]
 ```
 
+### Vue/Nuxt
+
+> [!NOTE]
+>
+> Install the required `Vue` dev dependencies before using:
+>
+> ```sh
+> pnpm add -D eslint-plugin-vue
+> ```
+>
+> Also, don't forget to add the `vue` lang key to the `eslint.validate` vscode setting:
+>
+> ```js
+> // .vscode/settings.json
+>
+> {
+>   "eslint.validate": ["javascript", "typescript", "vue"]
+> }
+> ```
+
+```js
+// eslint.config.js
+
+import { jsConfig, tsConfig, ignoresConfig } from '@hypernym/eslint-config'
+import { vueConfig } from '@hypernym/eslint-config/vue'
+
+export default [jsConfig, tsConfig, vueConfig, ignoresConfig]
+```
+
 ### Custom
 
 ```js
