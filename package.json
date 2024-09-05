@@ -16,6 +16,10 @@
     "./svelte": {
       "types": "./dist/types/svelte/index.d.ts",
       "import": "./dist/svelte/index.mjs"
+    },
+    "./vue": {
+      "types": "./dist/types/vue/index.d.ts",
+      "import": "./dist/vue/index.mjs"
     }
   },
   "files": [
@@ -45,7 +49,8 @@
     "eslint": ">=9.0.0",
     "typescript": ">=5.0.0",
     "eslint-plugin-svelte": ">=2.39.0",
-    "svelte-eslint-parser": ">=0.39.0"
+    "svelte-eslint-parser": ">=0.39.0",
+    "eslint-plugin-vue": ">=9.23.0"
   },
   "peerDependenciesMeta": {
     "typescript": {
@@ -55,6 +60,9 @@
       "optional": true
     },
     "svelte-eslint-parser": {
+      "optional": true
+    },
+    "eslint-plugin-vue": {
       "optional": true
     }
   },
@@ -72,6 +80,7 @@
     "@hypernym/tsconfig": "^2.1.0",
     "eslint": "^9.9.1",
     "eslint-plugin-svelte": "^2.43.0",
+    "eslint-plugin-vue": "^9.28.0",
     "prettier": "^3.3.3",
     "svelte-eslint-parser": "^0.41.0",
     "typescript": "^5.5.4"
