@@ -1,6 +1,6 @@
 {
   "name": "@hypernym/eslint-config",
-  "version": "3.3.3",
+  "version": "3.4.0",
   "author": "Hypernym Studio",
   "description": "Hypernym's internal config for ESLint.",
   "license": "MIT",
@@ -70,13 +70,13 @@
     "@eslint/js": "^9.9.1",
     "@types/eslint": "^9.6.1",
     "@types/eslint__js": "^8.42.3",
-    "@typescript-eslint/eslint-plugin": "^8.3.0",
-    "@typescript-eslint/parser": "^8.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.4.0",
+    "@typescript-eslint/parser": "^8.4.0",
     "globals": "^15.9.0"
   },
   "devDependencies": {
     "@hypernym/bundler": "^0.9.3",
-    "@hypernym/prettier-config": "^3.1.0",
+    "@hypernym/prettier-config": "^3.2.0",
     "@hypernym/tsconfig": "^2.1.0",
     "eslint": "^9.9.1",
     "eslint-plugin-svelte": "^2.43.0",
