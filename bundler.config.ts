@@ -24,5 +24,14 @@ export default defineConfig({
       ],
     },
     { types: './src/types/vue/index.ts' },
+    {
+      input: './src/react/index.js',
+      output: './dist/react/index.mjs',
+      externals: [
+        ...Object.keys(dependencies),
+        ...Object.keys(devDependencies),
+      ],
+    },
+    { types: './src/types/react/index.ts' },
   ],
 })

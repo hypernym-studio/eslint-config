@@ -103,6 +103,35 @@ import { vueConfig } from '@hypernym/eslint-config/vue'
 export default [jsConfig, tsConfig, vueConfig, ignoresConfig]
 ```
 
+### React/Next
+
+> [!NOTE]
+>
+> Install the required `React` dev dependencies before using:
+>
+> ```sh
+> pnpm add -D eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh
+> ```
+>
+> Also, don't forget to add the `react` lang keys to the `eslint.validate` vscode setting:
+>
+> ```js
+> // .vscode/settings.json
+>
+> {
+>   "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact"]
+> }
+> ```
+
+```js
+// eslint.config.js
+
+import { ignoresConfig } from '@hypernym/eslint-config'
+import { jsxConfig, tsxConfig } from '@hypernym/eslint-config/react'
+
+export default [jsxConfig, tsxConfig, ignoresConfig]
+```
+
 ### Custom
 
 ```js
