@@ -10,19 +10,19 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/types/index.d.ts",
+      "types": "./dist/types/index.d.mts",
       "import": "./dist/index.mjs"
     },
     "./svelte": {
-      "types": "./dist/types/svelte/index.d.ts",
+      "types": "./dist/types/svelte/index.d.mts",
       "import": "./dist/svelte/index.mjs"
     },
     "./vue": {
-      "types": "./dist/types/vue/index.d.ts",
+      "types": "./dist/types/vue/index.d.mts",
       "import": "./dist/vue/index.mjs"
     },
     "./react": {
-      "types": "./dist/types/react/index.d.ts",
+      "types": "./dist/types/react/index.d.mts",
       "import": "./dist/react/index.mjs"
     }
   },
