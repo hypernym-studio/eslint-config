@@ -44,7 +44,7 @@
     "prepublishOnly": "pnpm build"
   },
   "sideEffects": false,
-  "packageManager": "pnpm@9.12.3",
+  "packageManager": "pnpm@9.14.3",
   "engines": {
     "node": ">=20.0.0",
     "pnpm": ">=9.0.0"
@@ -83,25 +83,25 @@
     }
   },
   "dependencies": {
-    "@eslint/js": "^9.14.0",
+    "@eslint/js": "^9.15.0",
     "@types/eslint": "^9.6.1",
     "@types/eslint__js": "^8.42.3",
-    "@typescript-eslint/eslint-plugin": "^8.12.2",
-    "@typescript-eslint/parser": "^8.12.2",
-    "globals": "^15.11.0"
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "globals": "^15.12.0"
   },
   "devDependencies": {
     "@hypernym/bundler": "^0.14.0",
-    "@hypernym/prettier-config": "^3.2.0",
+    "@hypernym/prettier-config": "^3.2.1",
     "@hypernym/tsconfig": "^2.4.0",
-    "eslint": "^9.14.0",
+    "eslint": "^9.15.0",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
     "eslint-plugin-svelte": "^2.46.0",
-    "eslint-plugin-vue": "^9.30.0",
-    "prettier": "^3.3.3",
+    "eslint-plugin-vue": "^9.31.0",
+    "prettier": "^3.4.1",
     "svelte-eslint-parser": "^0.43.0",
-    "typescript": "^5.6.3"
+    "typescript": "^5.7.2"
   }
 }
