@@ -1,6 +1,6 @@
 {
   "name": "@hypernym/eslint-config",
-  "version": "3.5.3",
+  "version": "3.5.4",
   "author": "Hypernym Studio",
   "description": "Hypernym's internal config for ESLint.",
   "license": "MIT",
