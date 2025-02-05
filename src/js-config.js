@@ -16,5 +16,6 @@ export const jsConfig = {
   rules: {
     ...jsPlugin.configs.recommended.rules,
     'no-unused-vars': ['error', { ignoreRestSiblings: true }],
+    'no-empty': ['error', { allowEmptyCatch: true }],
   },
 }
