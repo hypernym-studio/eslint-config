@@ -28,7 +28,7 @@ export const svelteConfig = {
   rules: {
     ...jsPlugin.configs.recommended.rules,
     ...tsPlugin.configs.recommended.rules,
-    ...sveltePlugin.configs.recommended.rules,
+    ...sveltePlugin.configs.recommended.at(-1).rules,
     'no-undef': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-unused-vars': [
