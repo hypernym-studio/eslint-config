@@ -18,9 +18,11 @@
 
 <br>
 
-## Setup
+## Usage
 
-Add `lint` commands for manual linting (optionally):
+### Linting Commands
+
+Add `lint` commands for manual linting (optional):
 
 ```js
 // package.json
@@ -33,33 +35,36 @@ Add `lint` commands for manual linting (optionally):
 }
 ```
 
-## Usage
-
-### JS
+### JavaScript Config
 
 ```js
 // eslint.config.js
 
-import { jsConfig, ignoresConfig } from '@hypernym/eslint-config'
+import { defineConfig, jsConfig, ignoresConfig } from '@hypernym/eslint-config'
 
-export default [jsConfig, ignoresConfig]
+export default defineConfig([jsConfig, ignoresConfig])
 ```
 
-### TS
+### TypeScript Config
 
 ```js
 // eslint.config.js
 
-import { jsConfig, tsConfig, ignoresConfig } from '@hypernym/eslint-config'
+import {
+  defineConfig,
+  jsConfig,
+  tsConfig,
+  ignoresConfig,
+} from '@hypernym/eslint-config'
 
-export default [jsConfig, tsConfig, ignoresConfig]
+export default defineConfig([jsConfig, tsConfig, ignoresConfig])
 ```
 
-### Svelte/SvelteKit
+### Svelte/SvelteKit Config
 
 > [!NOTE]
 >
-> Install the required `Svelte` dev dependencies before using:
+> Install the required `Svelte` dependencies before using:
 >
 > ```sh
 > pnpm add -D eslint-plugin-svelte svelte-eslint-parser
@@ -78,20 +83,25 @@ export default [jsConfig, tsConfig, ignoresConfig]
 ```js
 // eslint.config.js
 
-import { jsConfig, tsConfig, ignoresConfig } from '@hypernym/eslint-config'
+import {
+  defineConfig,
+  jsConfig,
+  tsConfig,
+  ignoresConfig,
+} from '@hypernym/eslint-config'
 import { svelteConfig } from '@hypernym/eslint-config/svelte'
 
-export default [jsConfig, tsConfig, svelteConfig, ignoresConfig]
+export default defineConfig([jsConfig, tsConfig, svelteConfig, ignoresConfig])
 ```
 
-### Vue/Nuxt
+### Vue/Nuxt Config
 
 > [!NOTE]
 >
-> Install the required `Vue` dev dependencies before using:
+> Install the required `Vue` dependencies before using:
 >
 > ```sh
-> pnpm add -D eslint-plugin-vue
+> pnpm add -D eslint-plugin-vue vue-eslint-parser
 > ```
 >
 > Also, don't forget to add the `vue` lang key to the `eslint.validate` vscode setting:
@@ -107,17 +117,22 @@ export default [jsConfig, tsConfig, svelteConfig, ignoresConfig]
 ```js
 // eslint.config.js
 
-import { jsConfig, tsConfig, ignoresConfig } from '@hypernym/eslint-config'
+import {
+  defineConfig,
+  jsConfig,
+  tsConfig,
+  ignoresConfig,
+} from '@hypernym/eslint-config'
 import { vueConfig } from '@hypernym/eslint-config/vue'
 
-export default [jsConfig, tsConfig, vueConfig, ignoresConfig]
+export default defineConfig([jsConfig, tsConfig, vueConfig, ignoresConfig])
 ```
 
-### React/Next
+### React/Next Config
 
 > [!NOTE]
 >
-> Install the required `React` dev dependencies before using:
+> Install the required `React` dependencies before using:
 >
 > ```sh
 > pnpm add -D eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh
@@ -136,20 +151,26 @@ export default [jsConfig, tsConfig, vueConfig, ignoresConfig]
 ```js
 // eslint.config.js
 
-import { ignoresConfig } from '@hypernym/eslint-config'
+import { defineConfig, ignoresConfig } from '@hypernym/eslint-config'
 import { jsxConfig, tsxConfig } from '@hypernym/eslint-config/react'
 
-export default [jsxConfig, tsxConfig, ignoresConfig]
+export default defineConfig([jsxConfig, tsxConfig, ignoresConfig])
 ```
 
-### Custom
+## Custom Setup
 
 ```js
 // eslint.config.js
 
-import { jsConfig, tsConfig, ignores } from '@hypernym/eslint-config'
+import {
+  defineConfig,
+  globalIgnores,
+  jsConfig,
+  tsConfig,
+  ignores,
+} from '@hypernym/eslint-config'
 
-export default [
+export default defineConfig([
   jsConfig,
   tsConfig,
   {
@@ -162,11 +183,11 @@ export default [
       ],
     },
   },
-  {
-    ignores: [...ignores, '**/dir/**/*'],
-  },
-]
+  globalIgnores([...ignores, '**/dir/']),
+])
 ```
+
+For more info on how to `ignore files`, see the official [docs](https://eslint.org/docs/latest/use/configure/ignore).
 
 ## Community
 
