@@ -5,7 +5,6 @@ import tsParser from '@typescript-eslint/parser'
 import vuePlugin from 'eslint-plugin-vue'
 import vueParser from 'vue-eslint-parser'
 
-/** @type {import("eslint").Linter.Config} */
 export const vueConfig = {
   files: ['**/*.vue'],
   languageOptions: {

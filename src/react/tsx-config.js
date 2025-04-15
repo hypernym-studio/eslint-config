@@ -6,7 +6,6 @@ import reactPlugin from 'eslint-plugin-react'
 import reactPluginHooks from 'eslint-plugin-react-hooks'
 import reactPluginRefresh from 'eslint-plugin-react-refresh'
 
-/** @type {import("eslint").Linter.Config} */
 export const tsxConfig = {
   files: ['**/*.{ts,tsx,mts}'],
   languageOptions: {
