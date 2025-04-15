@@ -1,4 +1,3 @@
-import { jsConfig, tsConfig, ignoresConfig } from './src/index.js'
+import { defineConfig, jsConfig, tsConfig, ignoresConfig } from './src/index.js'
 
-/** @type {import("eslint").Linter.Config[]} */
-export default [jsConfig, tsConfig, ignoresConfig]
+export default defineConfig([jsConfig, tsConfig, ignoresConfig])
