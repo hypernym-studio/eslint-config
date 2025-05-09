@@ -1,4 +1,4 @@
-<h1 align="center">ESLint Config</h1>
+<h1 align="center">@hypernym/eslint-config</h1>
 
 <p align="center">Hypernym's internal config for ESLint.</p>
 
