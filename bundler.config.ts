@@ -8,38 +8,26 @@ const externals = [
 ]
 
 export default defineConfig({
+  externals,
   entries: [
+    { input: './src/index.js' },
     {
-      input: './src/index.js',
-      externals,
-    },
-    {
-      dts: './src/types/index.ts',
+      dts: './src/types.ts',
       output: './dist/index.d.mts',
-      externals,
     },
+    { input: './src/svelte/index.js' },
     {
-      input: './src/svelte/index.js',
-      externals,
-    },
-    {
-      dts: './src/types/svelte/index.ts',
+      dts: './src/svelte/types.ts',
       output: './dist/svelte/index.d.mts',
     },
+    { input: './src/vue/index.js' },
     {
-      input: './src/vue/index.js',
-      externals,
-    },
-    {
-      dts: './src/types/vue/index.ts',
+      dts: './src/vue/types.ts',
       output: './dist/vue/index.d.mts',
     },
+    { input: './src/react/index.js' },
     {
-      input: './src/react/index.js',
-      externals,
-    },
-    {
-      dts: './src/types/react/index.ts',
+      dts: './src/react/types.ts',
       output: './dist/react/index.d.mts',
     },
   ],
