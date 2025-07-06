@@ -38,7 +38,7 @@ Add `lint` commands for manual linting (optional):
 ### JavaScript Config
 
 ```js
-// eslint.config.js
+// eslint.config.mjs
 
 import { defineConfig, jsConfig, ignoresConfig } from '@hypernym/eslint-config'
 
@@ -48,7 +48,7 @@ export default defineConfig([jsConfig, ignoresConfig])
 ### TypeScript Config
 
 ```js
-// eslint.config.js
+// eslint.config.mjs
 
 import {
   defineConfig,
@@ -81,7 +81,7 @@ export default defineConfig([jsConfig, tsConfig, ignoresConfig])
 > ```
 
 ```js
-// eslint.config.js
+// eslint.config.mjs
 
 import {
   defineConfig,
@@ -115,7 +115,7 @@ export default defineConfig([jsConfig, tsConfig, svelteConfig, ignoresConfig])
 > ```
 
 ```js
-// eslint.config.js
+// eslint.config.mjs
 
 import {
   defineConfig,
@@ -149,7 +149,7 @@ export default defineConfig([jsConfig, tsConfig, vueConfig, ignoresConfig])
 > ```
 
 ```js
-// eslint.config.js
+// eslint.config.mjs
 
 import { defineConfig, ignoresConfig } from '@hypernym/eslint-config'
 import { jsxConfig, tsxConfig } from '@hypernym/eslint-config/react'
@@ -160,7 +160,7 @@ export default defineConfig([jsxConfig, tsxConfig, ignoresConfig])
 ## Custom Setup
 
 ```js
-// eslint.config.js
+// eslint.config.mjs
 
 import {
   defineConfig,
